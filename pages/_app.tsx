@@ -3,7 +3,7 @@ import { useApollo } from 'src/apolloClient'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
-   const client = useApollo()
+   const client = useApollo(pageProps.initialApolloState)
 
    return (
       <ApolloProvider client={client}>

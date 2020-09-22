@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useQuery, gql } from '@apollo/client'
+import { initializeApollo } from 'src/apolloClient'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import { print } from 'graphql/language/printer'
 import prismStyle from 'react-syntax-highlighter/dist/cjs/styles/prism/material-oceanic'
@@ -120,4 +121,18 @@ export default function Home() {
          </div>
       </>
    )
+}
+
+export async function getStaticProps() {
+   const apolloClient = initializeApollo()
+
+   await apolloClient.query({
+      query: ResumeQuery,
+   })
+
+   return {
+      props: {
+         initialApolloState: apolloClient.cache.extract(),
+      },
+   }
 }
