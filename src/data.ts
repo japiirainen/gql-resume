@@ -16,6 +16,7 @@ export const data = {
          company: 'Jinzio',
          startDate: '2020-06-01',
          endDate: null,
+         location: 'remote, Finland',
          achievements: [
             'Development of React and Node application',
             'Translation of the React app',
@@ -27,6 +28,7 @@ export const data = {
          company: 'Ski Sport Finland',
          startDate: '2015-04-01',
          endDate: '2020-03-15',
+         location: 'Helsinki, Finland',
          achievements: [
             'Many National championship medals in junior classes.',
             'National championship Bronze in Slalom 2019',
