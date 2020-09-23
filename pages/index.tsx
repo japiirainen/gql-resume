@@ -8,7 +8,7 @@ import { format } from 'date-fns'
 import styles from '../styles/Home.module.css'
 
 const ResumeQuery = gql`
-   query ResumeQuery {
+   query Joona {
       bio {
          name
          tagline
@@ -17,6 +17,16 @@ const ResumeQuery = gql`
          website
          email
          github
+      }
+      techSkills {
+         id
+         name
+         skillLevel
+      }
+      languageSkills {
+         id
+         name
+         skillLevel
       }
       positions {
          id

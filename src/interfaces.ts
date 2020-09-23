@@ -17,3 +17,15 @@ export interface PositionInterface {
    location: string
    achievements: string[]
 }
+
+export interface TechSkillInterface {
+   id: string
+   name: string
+   skillLevel: string
+}
+
+export interface LanguageSkillInterface {
+   id: string
+   name: string
+   skillLevel: string
+}

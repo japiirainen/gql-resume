@@ -14,3 +14,5 @@ export const GQLURL = decorateType(GraphQLURL, {
 export * from './Query'
 export * from './Bio'
 export * from './Position'
+export * from './LanguageSkill'
+export * from './TechSkill'

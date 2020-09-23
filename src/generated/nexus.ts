@@ -41,8 +41,10 @@ export interface NexusGenScalars {
 
 export interface NexusGenRootTypes {
   Bio: faces.undefined;
+  LanguageSkill: faces.undefined;
   Position: faces.undefined;
   Query: {};
+  TechSkill: faces.undefined;
 }
 
 export interface NexusGenAllTypes extends NexusGenRootTypes {
@@ -65,6 +67,11 @@ export interface NexusGenFieldTypes {
     tagline: string; // String!
     website: NexusGenScalars['URL']; // URL!
   }
+  LanguageSkill: { // field return type
+    id: string; // ID!
+    name: string; // String!
+    skillLevel: string; // String!
+  }
   Position: { // field return type
     achievements: string[]; // [String!]!
     company: string; // String!
@@ -78,8 +85,15 @@ export interface NexusGenFieldTypes {
   }
   Query: { // field return type
     bio: NexusGenRootTypes['Bio']; // Bio!
+    languageSkills: NexusGenRootTypes['LanguageSkill'][]; // [LanguageSkill!]!
     position: NexusGenRootTypes['Position'] | null; // Position
     positions: NexusGenRootTypes['Position'][]; // [Position!]!
+    techSkills: NexusGenRootTypes['TechSkill'][]; // [TechSkill!]!
+  }
+  TechSkill: { // field return type
+    id: string; // ID!
+    name: string; // String!
+    skillLevel: string; // String!
   }
 }
 
@@ -96,7 +110,7 @@ export interface NexusGenAbstractResolveReturnTypes {
 
 export interface NexusGenInheritedFields {}
 
-export type NexusGenObjectNames = "Bio" | "Position" | "Query";
+export type NexusGenObjectNames = "Bio" | "LanguageSkill" | "Position" | "Query" | "TechSkill";
 
 export type NexusGenInputNames = never;
 

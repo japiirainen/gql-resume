@@ -17,6 +17,12 @@ A date string, such as 2007-12-03, compliant with the `full-date` format outline
 """
 scalar Date
 
+type LanguageSkill {
+  id: ID!
+  name: String!
+  skillLevel: String!
+}
+
 type Position {
   achievements: [String!]!
   company: String!
@@ -33,11 +39,23 @@ type Query {
   """Find a bio"""
   bio: Bio!
 
+  """Find languageSkills"""
+  languageSkills: [LanguageSkill!]!
+
   """Find a position by its ID"""
   position(id: ID): Position
 
   """Find all positions"""
   positions: [Position!]!
+
+  """Find techSkills"""
+  techSkills: [TechSkill!]!
+}
+
+type TechSkill {
+  id: ID!
+  name: String!
+  skillLevel: String!
 }
 
 """

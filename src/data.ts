@@ -8,7 +8,70 @@ export const data = {
       linkedin: 'https://www.linkedin.com/in/joona-piirainen-a026351a8/',
       objective: 'To build awesome stuff with code!',
    },
-   skills: ['Javascript', 'Typescript', 'NodeJs', 'React', 'Graphql'],
+   techSkills: [
+      {
+         id: '1',
+         name: 'JavaScript',
+         skillLevel: 'Proficient',
+      },
+      {
+         id: '2',
+         name: 'TypeScript',
+         skillLevel: 'Proficient',
+      },
+      {
+         id: '3',
+         name: 'NodeJs',
+         skillLevel: 'Proficient',
+      },
+      {
+         id: '4',
+         name: 'React',
+         skillLevel: 'Proficient',
+      },
+      {
+         id: '5',
+         name: 'Graphql',
+         skillLevel: 'Proficient',
+      },
+      {
+         id: '6',
+         name: 'mongoDb',
+         skillLevel: 'Proficient',
+      },
+      {
+         id: '7',
+         name: 'SQL',
+         skillLevel: 'Basic Knowledge',
+      },
+      {
+         id: '8',
+         name: 'python',
+         skillLevel: 'Basic Knowledge',
+      },
+      {
+         id: '9',
+         name: 'Clojure',
+         skillLevel: 'Basic Knowledge',
+      },
+   ],
+   languageSkills: [
+      {
+         id: '1',
+         name: 'Finnish',
+         skillLevel: 'Native speaker',
+      },
+      {
+         id: '2',
+         name: 'English',
+         skillLevel: 'Very good',
+      },
+      {
+         id: '3',
+         name: 'Sweden',
+         skillLevel: 'Basic knowledge',
+      },
+   ],
    positions: [
       {
          id: '1',
