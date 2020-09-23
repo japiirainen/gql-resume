@@ -3,16 +3,16 @@ import { useQuery } from '@apollo/client'
 import styled from 'styled-components'
 import { initializeApollo } from 'src/apolloClient'
 import { RESUME_QUERY } from '../src/Queries'
-import styles from 'src/styles/Home.module.css'
 import { QueryComponent } from 'src/components/QueryComponent'
 import { Experience } from 'src/components/Experience'
 import { Objective } from 'src/components/Objective'
 import { Header } from 'src/components/Header'
+import { Contact } from 'src/components/Contact'
 
 const SplitRight = styled.div`
-   width: 75%;
+   width: 65%;
    @media only screen and (max-width: 1024px) {
-      width: 60%;
+      width: 50%;
    }
    @media only screen and (max-width: 650px) {
       width: 100%;
@@ -46,12 +46,7 @@ export default function Home() {
       return <span>Error...</span>
    }
    if (loading) {
-      return (
-         <header className={styles.header}>
-            <h1>Joona Piirainen</h1>
-            <h2>loading...</h2>
-         </header>
-      )
+      return <p>loading...</p>
    }
    const { bio, positions } = data
    return (
@@ -61,31 +56,9 @@ export default function Home() {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <Header bio={bio} />
-
          <Split>
             <SplitLeft>
-               <h2>Contact</h2>
-               <p>
-                  <strong>Email</strong> <a href={`mailto:${bio.email}`}>{bio.email}</a>
-               </p>
-               <p>
-                  <strong>Website</strong>{' '}
-                  <a target="_blank" href={bio.website}>
-                     {new URL(bio.website).host}
-                  </a>
-               </p>
-               <p>
-                  <strong>Github</strong>{' '}
-                  <a target="_blank" href={bio.github}>
-                     {bio.github.replace('https://', '')}
-                  </a>
-               </p>
-               <p>
-                  <strong>LinkedIn</strong>{' '}
-                  <a target="_blank" href={bio.linkedin}>
-                     {bio.linkedin.replace('https://', '').replace('-a026351a8/', '')}
-                  </a>
-               </p>
+               <Contact bio={bio} />
                <QueryComponent />
             </SplitLeft>
             <SplitRight>
