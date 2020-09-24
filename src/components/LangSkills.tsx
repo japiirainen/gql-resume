@@ -1,6 +1,9 @@
+import { LanguageSkillInterface } from 'src/interfaces'
 import { LightP } from './Experience'
 
-export const LangSkills: React.FC<{ languageSkills: any[] }> = ({ languageSkills }) => {
+export const LangSkills: React.FC<{ languageSkills: LanguageSkillInterface[] }> = ({
+   languageSkills,
+}) => {
    return (
       <>
          <h2>Language skills</h2>

@@ -1,6 +1,7 @@
+import { TechSkillInterface } from 'src/interfaces'
 import { LightP } from './Experience'
 
-export const TechSkills: React.FC<{ techSkills: any[] }> = ({ techSkills }) => {
+export const TechSkills: React.FC<{ techSkills: TechSkillInterface[] }> = ({ techSkills }) => {
    return (
       <>
          <h2>Tech skills</h2>

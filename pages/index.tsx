@@ -11,6 +11,13 @@ import { Contact } from 'src/components/Contact'
 import { LangSkills } from 'src/components/LangSkills'
 import { TechSkills } from 'src/components/TechSkills'
 import { SoftSkills } from 'src/components/SoftSkills'
+import {
+   BioInterface,
+   LanguageSkillInterface,
+   PositionInterface,
+   SoftSkillInterface,
+   TechSkillInterface,
+} from 'src/interfaces'
 
 const SplitRight = styled.div`
    width: 70%;
@@ -53,7 +60,19 @@ export default function Home() {
    if (loading) {
       return <p>loading...</p>
    }
-   const { bio, positions, languageSkills, techSkills, softSkills } = data
+   const {
+      bio,
+      positions,
+      languageSkills,
+      techSkills,
+      softSkills,
+   }: {
+      bio: BioInterface
+      positions: PositionInterface[]
+      languageSkills: LanguageSkillInterface[]
+      techSkills: TechSkillInterface[]
+      softSkills: SoftSkillInterface[]
+   } = data
    return (
       <>
          <Head>

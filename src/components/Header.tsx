@@ -1,3 +1,4 @@
+import { BioInterface } from 'src/interfaces'
 import styled, { css } from 'styled-components'
 
 const MainHeader = styled.header`
@@ -13,7 +14,7 @@ const BioH2 = styled.h2`
    color: #e7e5e5;
 `
 
-export const Header: React.FC<{ bio: any }> = ({ bio }) => {
+export const Header: React.FC<{ bio: BioInterface }> = ({ bio }) => {
    return (
       <MainHeader>
          <NameH1>{bio.name}</NameH1>

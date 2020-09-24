@@ -1,6 +1,20 @@
-export const Contact: React.FC<{ bio: any }> = ({ bio }) => {
+import { BioInterface } from 'src/interfaces'
+import styled from 'styled-components'
+
+const EllipsDiv = styled.div`
+   width: 200px;
+   text-overflow: ellipsis;
+
+   @media print {
+      width: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+   }
+`
+
+export const Contact: React.FC<{ bio: BioInterface }> = ({ bio }) => {
    return (
-      <>
+      <EllipsDiv>
          <h2>Contact</h2>
          <p>
             <strong>Email {'=>'}</strong> <a href={`mailto:${bio.email}`}>{bio.email}</a>
@@ -23,6 +37,6 @@ export const Contact: React.FC<{ bio: any }> = ({ bio }) => {
                {bio.linkedin.replace('https://', '').replace('-a026351a8/', '')}
             </a>
          </p>
-      </>
+      </EllipsDiv>
    )
 }

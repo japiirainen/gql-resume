@@ -1,4 +1,5 @@
 import { format } from 'date-fns'
+import { PositionInterface } from 'src/interfaces'
 import styled from 'styled-components'
 
 export const LightP = styled.p`
@@ -7,7 +8,7 @@ export const LightP = styled.p`
    color: #607d8b;
 `
 
-export const Experience: React.FC<{ positions: any[] }> = ({ positions }) => {
+export const Experience: React.FC<{ positions: PositionInterface[] }> = ({ positions }) => {
    return (
       <div>
          <h2>Experience</h2>

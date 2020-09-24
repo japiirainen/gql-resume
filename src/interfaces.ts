@@ -16,6 +16,8 @@ export interface PositionInterface {
    endDate?: string
    location: string
    achievements: string[]
+   years: number
+   months: number
 }
 
 export interface TechSkillInterface {

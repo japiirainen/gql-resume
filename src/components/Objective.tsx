@@ -1,4 +1,6 @@
-export const Objective: React.FC<{ bio: any }> = ({ bio }) => {
+import { BioInterface } from 'src/interfaces'
+
+export const Objective: React.FC<{ bio: BioInterface }> = ({ bio }) => {
    return (
       <>
          <h2>Objective</h2>

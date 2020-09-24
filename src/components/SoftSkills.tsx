@@ -1,3 +1,4 @@
+import { SoftSkillInterface } from 'src/interfaces'
 import styled from 'styled-components'
 
 const LightLi = styled.li`
@@ -6,7 +7,7 @@ const LightLi = styled.li`
    color: #607d8b;
 `
 
-export const SoftSkills: React.FC<{ softSkills: any[] }> = ({ softSkills }) => {
+export const SoftSkills: React.FC<{ softSkills: SoftSkillInterface[] }> = ({ softSkills }) => {
    return (
       <>
          <h2>Social skills</h2>
