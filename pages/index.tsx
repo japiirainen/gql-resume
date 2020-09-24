@@ -55,7 +55,7 @@ export default function Home() {
    const { data, error, loading } = useQuery(RESUME_QUERY)
 
    if (error) {
-      return <span>Error...</span>
+      return <span>Error... oops</span>
    }
    if (loading) {
       return <p>loading...</p>
