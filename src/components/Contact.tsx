@@ -39,7 +39,7 @@ export const Contact: React.FC<{ bio: BioInterface }> = ({ bio }) => {
          </p>
          <p>
             <strong>Playground {'=>'}</strong>{' '}
-            <a target="_blank" href="cv.joonapiirainen.com/api/graphql">
+            <a target="_blank" href="/api/graphql">
                api/graphql
             </a>
          </p>
