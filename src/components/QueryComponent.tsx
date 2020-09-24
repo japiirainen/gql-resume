@@ -7,6 +7,7 @@ import { RESUME_QUERY } from '../Queries'
 export const QueryComponent: React.FC = () => {
    return (
       <SyntaxHighlighter language="graphql" style={prismStyle}>
+         <a href="cv.joonapiirainen.com/api/graphql">playground</a>
          {print(RESUME_QUERY)}
       </SyntaxHighlighter>
    )
