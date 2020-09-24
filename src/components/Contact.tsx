@@ -37,12 +37,6 @@ export const Contact: React.FC<{ bio: BioInterface }> = ({ bio }) => {
                {bio.linkedin.replace('https://', '').replace('-a026351a8/', '')}
             </a>
          </p>
-         <p>
-            <strong>Playground {'=>'}</strong>{' '}
-            <a target="_blank" href="/api/graphql">
-               api/graphql
-            </a>
-         </p>
       </EllipsDiv>
    )
 }
