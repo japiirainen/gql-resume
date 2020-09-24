@@ -3,7 +3,7 @@
  * Do not make changes to this file directly
  */
 
-import * as faces from "../interfaces"
+
 import { core } from "@nexus/schema"
 declare global {
   interface NexusGenCustomInputMethods<TypeName extends string> {
@@ -40,12 +40,33 @@ export interface NexusGenScalars {
 }
 
 export interface NexusGenRootTypes {
-  Bio: faces.undefined;
-  LanguageSkill: faces.undefined;
-  Position: faces.undefined;
+  Bio: { // root type
+    email: string; // String!
+    name: string; // String!
+    objective: string; // String!
+    tagline: string; // String!
+  }
+  LanguageSkill: { // root type
+    id: string; // ID!
+    name: string; // String!
+    skillLevel: string; // String!
+  }
+  Position: { // root type
+    company: string; // String!
+    id: string; // ID!
+    location: string; // String!
+    title: string; // String!
+  }
   Query: {};
-  SoftSkill: faces.undefined;
-  TechSkill: faces.undefined;
+  SoftSkill: { // root type
+    id: string; // ID!
+    name: string; // String!
+  }
+  TechSkill: { // root type
+    id: string; // ID!
+    name: string; // String!
+    skillLevel: string; // String!
+  }
 }
 
 export interface NexusGenAllTypes extends NexusGenRootTypes {

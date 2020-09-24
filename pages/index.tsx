@@ -17,7 +17,7 @@ import {
    PositionInterface,
    SoftSkillInterface,
    TechSkillInterface,
-} from 'src/interfaces'
+} from 'src/interfaces/interfaces'
 
 const SplitRight = styled.div`
    width: 70%;

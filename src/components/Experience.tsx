@@ -1,5 +1,5 @@
 import { format } from 'date-fns'
-import { PositionInterface } from 'src/interfaces'
+import { PositionInterface } from 'src/interfaces/interfaces'
 import styled from 'styled-components'
 
 export const LightP = styled.p`

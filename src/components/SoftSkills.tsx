@@ -1,4 +1,4 @@
-import { SoftSkillInterface } from 'src/interfaces'
+import { SoftSkillInterface } from 'src/interfaces/interfaces'
 import styled from 'styled-components'
 
 const LightLi = styled.li`

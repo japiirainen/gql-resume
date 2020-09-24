@@ -1,4 +1,4 @@
-import { BioInterface } from 'src/interfaces'
+import { BioInterface } from 'src/interfaces/interfaces'
 
 export const Objective: React.FC<{ bio: BioInterface }> = ({ bio }) => {
    return (

@@ -1,4 +1,4 @@
-import { BioInterface } from 'src/interfaces'
+import { BioInterface } from 'src/interfaces/interfaces'
 import styled from 'styled-components'
 
 const EllipsDiv = styled.div`

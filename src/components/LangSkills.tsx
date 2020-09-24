@@ -1,4 +1,4 @@
-import { LanguageSkillInterface } from 'src/interfaces'
+import { LanguageSkillInterface } from 'src/interfaces/interfaces'
 import { LightP } from './Experience'
 
 export const LangSkills: React.FC<{ languageSkills: LanguageSkillInterface[] }> = ({

@@ -11,9 +11,12 @@ export const schema = makeSchema({
    typegenAutoConfig: {
       sources: [
          {
-            alias: 'faces',
-            source: path.join(process.cwd(), 'src', 'interfaces.ts'),
-            typeMatch: type => new RegExp(`${type}Interface`),
+            alias: 'types',
+            source: path.join(process.cwd(), 'src', 'interfaces', 'index.ts'),
+            typeMatch: type => {
+               console.log(`${type}Interface`)
+               return new RegExp(`${type}Interface`)
+            },
          },
       ],
       backingTypeMap: {

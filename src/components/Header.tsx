@@ -1,4 +1,4 @@
-import { BioInterface } from 'src/interfaces'
+import { BioInterface } from 'src/interfaces/interfaces'
 import styled, { css } from 'styled-components'
 
 const MainHeader = styled.header`
