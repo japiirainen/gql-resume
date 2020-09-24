@@ -12,11 +12,8 @@ export const schema = makeSchema({
       sources: [
          {
             alias: 'types',
-            source: path.join(process.cwd(), 'src', 'interfaces', 'index.ts'),
-            typeMatch: type => {
-               console.log(`${type}Interface`)
-               return new RegExp(`${type}Interface`)
-            },
+            source: path.join(process.cwd(), 'src', 'interfaces', 'interfaces.ts'),
+            typeMatch: type => new RegExp(`(${type}Interface)`),
          },
       ],
       backingTypeMap: {

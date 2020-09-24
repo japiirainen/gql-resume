@@ -16,7 +16,7 @@ export const Query = queryType({
       t.list.field('positions', {
          type: Position,
          description: 'Find all positions',
-         resolve: () => data.positions,
+         resolve: () => data.positions as any,
       })
 
       t.field('position', {
@@ -24,7 +24,7 @@ export const Query = queryType({
          description: 'Find a position by its ID',
          nullable: true,
          args: { id: idArg() },
-         resolve: (_, { id }: { id: string }) => data.positions.find(pos => pos.id === id),
+         resolve: (_, { id }: { id: string }) => data.positions.find(pos => pos.id === id) as any,
       })
 
       t.list.field('languageSkills', {
