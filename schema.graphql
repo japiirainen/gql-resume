@@ -49,7 +49,15 @@ type Query {
   positions: [Position!]!
 
   """Find techSkills"""
+  softSkills: [SoftSkill!]!
+
+  """Find techSkills"""
   techSkills: [TechSkill!]!
+}
+
+type SoftSkill {
+  id: ID!
+  name: String!
 }
 
 type TechSkill {

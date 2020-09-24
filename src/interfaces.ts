@@ -29,3 +29,8 @@ export interface LanguageSkillInterface {
    name: string
    skillLevel: string
 }
+
+export interface SoftSkillInterface {
+   id: string
+   name: string
+}

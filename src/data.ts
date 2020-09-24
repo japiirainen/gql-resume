@@ -6,7 +6,8 @@ export const data = {
       github: 'https://github.com/japiirainen',
       website: 'https://joonapiirainen.com',
       linkedin: 'https://www.linkedin.com/in/joona-piirainen-a026351a8/',
-      objective: 'To build awesome stuff with code!',
+      objective:
+         "To build awesome stuff with code! Currently dedicating most of my time in becoming a software developer. Being an athlete taught me many things, perhaps the most important skill I learned is the ability to learn new things fast which helps me a lot with learning to code. I have also realised that I love learning new things and trying to become better at whatever I'm doing.",
    },
    techSkills: [
       {
@@ -72,6 +73,21 @@ export const data = {
          skillLevel: 'Basic knowledge',
       },
    ],
+   softSkills: [
+      {
+         id: '1',
+         name:
+            "Ability to communicate well with others. I am not afraid to ask for help when I'm in need of some.",
+      },
+      {
+         id: '2',
+         name: 'Ability to work in teams and to perform better when surrounded by others.',
+      },
+      {
+         id: '3',
+         name: 'Ability to follow schedules.',
+      },
+   ],
    positions: [
       {
          id: '1',
@@ -81,13 +97,14 @@ export const data = {
          endDate: null,
          location: 'remote, Finland',
          achievements: [
+            'I have been working as a trainee in a recruitment technology startup called Jinzio.',
             'Development of React and Node application',
             'Translation of the React app',
          ],
       },
       {
          id: '2',
-         title: 'Athlete',
+         title: 'Alpine Skier',
          company: 'Ski Sport Finland',
          startDate: '2015-04-01',
          endDate: '2020-03-15',

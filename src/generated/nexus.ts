@@ -44,6 +44,7 @@ export interface NexusGenRootTypes {
   LanguageSkill: faces.undefined;
   Position: faces.undefined;
   Query: {};
+  SoftSkill: faces.undefined;
   TechSkill: faces.undefined;
 }
 
@@ -88,7 +89,12 @@ export interface NexusGenFieldTypes {
     languageSkills: NexusGenRootTypes['LanguageSkill'][]; // [LanguageSkill!]!
     position: NexusGenRootTypes['Position'] | null; // Position
     positions: NexusGenRootTypes['Position'][]; // [Position!]!
+    softSkills: NexusGenRootTypes['SoftSkill'][]; // [SoftSkill!]!
     techSkills: NexusGenRootTypes['TechSkill'][]; // [TechSkill!]!
+  }
+  SoftSkill: { // field return type
+    id: string; // ID!
+    name: string; // String!
   }
   TechSkill: { // field return type
     id: string; // ID!
@@ -110,7 +116,7 @@ export interface NexusGenAbstractResolveReturnTypes {
 
 export interface NexusGenInheritedFields {}
 
-export type NexusGenObjectNames = "Bio" | "LanguageSkill" | "Position" | "Query" | "TechSkill";
+export type NexusGenObjectNames = "Bio" | "LanguageSkill" | "Position" | "Query" | "SoftSkill" | "TechSkill";
 
 export type NexusGenInputNames = never;
 

@@ -1,17 +1,13 @@
 import { format } from 'date-fns'
 import styled from 'styled-components'
 
-interface ExperienceProps {
-   positions: any[]
-}
-
-const LighP = styled.p`
+export const LightP = styled.p`
    margin: 0.25rem 0;
    font-size: 0.9rem;
    color: #607d8b;
 `
 
-export const Experience: React.FC<ExperienceProps> = ({ positions }) => {
+export const Experience: React.FC<{ positions: any[] }> = ({ positions }) => {
    return (
       <div>
          <h2>Experience</h2>
@@ -25,14 +21,14 @@ export const Experience: React.FC<ExperienceProps> = ({ positions }) => {
             return (
                <div key={pos.id}>
                   <h3>{pos.title}</h3>
-                  <LighP>
+                  <LightP>
                      {pos.company} | {pos.location}
-                  </LighP>
-                  <LighP>
+                  </LightP>
+                  <LightP>
                      {format(new Date(pos.startDate), 'MMM yyyy')} |{' '}
                      {pos.endDate ? format(new Date(pos.endDate), 'MMM yyyy') : 'current'} ({length}
                      )
-                  </LighP>
+                  </LightP>
                   <ul>
                      {pos.achievements.map(a => (
                         <li key={a}>{a}</li>

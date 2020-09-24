@@ -2,6 +2,7 @@ import { idArg, queryType } from '@nexus/schema'
 import { data } from 'src/data'
 import { Bio, Position } from './index'
 import { LanguageSkill } from './LanguageSkill'
+import { SoftSkill } from './SoftSkill'
 import { TechSkill } from './TechSkill'
 
 export const Query = queryType({
@@ -36,6 +37,12 @@ export const Query = queryType({
          type: TechSkill,
          description: 'Find techSkills',
          resolve: () => data.techSkills,
+      })
+
+      t.list.field('softSkills', {
+         type: SoftSkill,
+         description: 'Find techSkills',
+         resolve: () => data.softSkills,
       })
    },
 })

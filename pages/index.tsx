@@ -8,10 +8,15 @@ import { Experience } from 'src/components/Experience'
 import { Objective } from 'src/components/Objective'
 import { Header } from 'src/components/Header'
 import { Contact } from 'src/components/Contact'
+import { LangSkills } from 'src/components/LangSkills'
+import { TechSkills } from 'src/components/TechSkills'
+import { SoftSkills } from 'src/components/SoftSkills'
 
 const SplitRight = styled.div`
-   width: 65%;
+   width: 70%;
+   margin-left: 20px;
    @media only screen and (max-width: 1024px) {
+      margin-left: 20px;
       width: 50%;
    }
    @media only screen and (max-width: 650px) {
@@ -48,7 +53,7 @@ export default function Home() {
    if (loading) {
       return <p>loading...</p>
    }
-   const { bio, positions } = data
+   const { bio, positions, languageSkills, techSkills, softSkills } = data
    return (
       <>
          <Head>
@@ -63,6 +68,9 @@ export default function Home() {
             </SplitLeft>
             <SplitRight>
                <Objective bio={bio} />
+               <LangSkills languageSkills={languageSkills} />
+               <TechSkills techSkills={techSkills} />
+               <SoftSkills softSkills={softSkills} />
                <Experience positions={positions} />
             </SplitRight>
          </Split>

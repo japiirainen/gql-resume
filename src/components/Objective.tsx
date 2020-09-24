@@ -1,8 +1,4 @@
-export interface BioProps {
-   bio: any
-}
-
-export const Objective: React.FC<BioProps> = ({ bio }) => {
+export const Objective: React.FC<{ bio: any }> = ({ bio }) => {
    return (
       <>
          <h2>Objective</h2>

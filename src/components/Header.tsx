@@ -1,18 +1,23 @@
-import { BioProps } from './Objective'
+import styled, { css } from 'styled-components'
 
-import styled from 'styled-components'
-
-const MyHeader = styled.header`
+const MainHeader = styled.header`
    text-align: center;
    padding: 2rem 0;
-   background-color: #bbdefb;
+   background-color: #785964;
 `
 
-export const Header: React.FC<BioProps> = ({ bio }) => {
+const NameH1 = styled.h1`
+   color: #e7e5e5;
+`
+const BioH2 = styled.h2`
+   color: #e7e5e5;
+`
+
+export const Header: React.FC<{ bio: any }> = ({ bio }) => {
    return (
-      <MyHeader>
-         <h1>{bio.name}</h1>
-         <h2>{bio.tagline}</h2>
-      </MyHeader>
+      <MainHeader>
+         <NameH1>{bio.name}</NameH1>
+         <BioH2>{bio.tagline}</BioH2>
+      </MainHeader>
    )
 }

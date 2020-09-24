@@ -21,6 +21,10 @@ export const RESUME_QUERY = gql`
          name
          skillLevel
       }
+      softSkills {
+         id
+         name
+      }
       positions {
          id
          title
