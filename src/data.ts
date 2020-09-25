@@ -110,9 +110,9 @@ export const data = {
          endDate: '2020-03-15',
          location: 'Helsinki, Finland',
          achievements: [
-            'Many National championship medals in junior classes.',
+            'Multiple National championship medals in junior classes, including a National championship gold in slalom in u21 age group.',
             'National championship Bronze in Slalom 2019',
-            'Many starts in European cum and Junior world championships',
+            'Many starts in European cup and Junior world championships',
          ],
       },
    ],
