@@ -1,11 +1,4 @@
 import { SoftSkillInterface } from 'src/interfaces/interfaces'
-import styled from 'styled-components'
-
-const LightLi = styled.li`
-   margin: 0.25rem 0;
-   font-size: 0.9rem;
-   color: #607d8b;
-`
 
 export const SoftSkills: React.FC<{ softSkills: SoftSkillInterface[] }> = ({ softSkills }) => {
    return (
@@ -13,7 +6,7 @@ export const SoftSkills: React.FC<{ softSkills: SoftSkillInterface[] }> = ({ sof
          <h2>Social skills</h2>
          <ul>
             {softSkills.map(skill => {
-               return <LightLi key={skill.id}>{skill.name}</LightLi>
+               return <li key={skill.id}>{skill.name}</li>
             })}
          </ul>
       </>
