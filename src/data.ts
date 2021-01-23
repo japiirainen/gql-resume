@@ -55,6 +55,21 @@ export const data = {
          name: 'Clojure',
          skillLevel: 'Basic Knowledge',
       },
+      {
+         id: '10',
+         name: 'Haskell',
+         skillLevel: 'Basic knowledge',
+      },
+      {
+         id: '11',
+         name: 'Go',
+         skillLevel: 'Basic knowledge',
+      },
+      {
+         id: '12',
+         name: 'Rust',
+         skillLevel: 'Basic knowledge',
+      },
    ],
    languageSkills: [
       {
@@ -91,10 +106,23 @@ export const data = {
    positions: [
       {
          id: '1',
+         title: 'Full-stack Developer',
+         company: 'Puheet.com',
+         startDate: '2020-09-16',
+         endDate: null,
+         location: 'Espoo / remote, Finland',
+         achievements: [
+            'Backend work with mostly NodeJs + some python',
+            'Frontend work with React',
+            'Infastructure using AWS.',
+         ],
+      },
+      {
+         id: '2',
          title: 'Frontend Developer',
          company: 'Jinzio',
          startDate: '2020-06-01',
-         endDate: null,
+         endDate: '2020-09-31',
          location: 'remote, Finland',
          achievements: [
             'I have been working as a trainee in a recruitment technology startup called Jinzio.',
@@ -103,7 +131,7 @@ export const data = {
          ],
       },
       {
-         id: '2',
+         id: '3',
          title: 'Alpine Skier',
          company: 'Ski Sport Finland',
          startDate: '2015-04-01',
