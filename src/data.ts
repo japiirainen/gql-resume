@@ -7,7 +7,7 @@ export const data = {
       website: 'https://joonapiirainen.com',
       linkedin: 'https://www.linkedin.com/in/joona-piirainen-a026351a8/',
       objective:
-         "To build awesome stuff with code! Currently dedicating most of my time in becoming a software developer. Being an athlete taught me many things, perhaps the most important skill I learned is the ability to learn new things fast which helps me a lot with learning to code. I have also realised that I love learning new things and trying to become better at whatever I'm doing.",
+         "To build awesome stuff with code! Currently dedicating most of my time in becoming a better software developer. Huge fan of open-source software and trying to take part in making it even better! Being an athlete taught me many things, perhaps the most important skill I learned is the ability to like learning new things, which helps a lot in this field of work.",
    },
    techSkills: [
       {
