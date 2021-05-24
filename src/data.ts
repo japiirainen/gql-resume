@@ -7,7 +7,7 @@ export const data = {
       website: 'https://joonapiirainen.com',
       linkedin: 'https://www.linkedin.com/in/joona-piirainen-a026351a8/',
       objective:
-         "To build awesome stuff with code! Currently dedicating most of my time in becoming a better software developer. Huge fan of open-source software and trying to take part in making it even better! Being an athlete taught me many things, perhaps the most important skill I learned is the ability to like learning new things, which helps a lot in this field of work.",
+         'To build awesome stuff with code! Currently dedicating most of my time in becoming a better software developer. Huge fan of open-source software and trying to take part in making it even better! Being an athlete taught me many things, perhaps the most important skill I learned is the ability to like learning new things, which helps a lot in this field of work.',
    },
    techSkills: [
       {
@@ -91,8 +91,7 @@ export const data = {
    softSkills: [
       {
          id: '1',
-         name:
-            "Ability to communicate well with others. I am not afraid to ask for help when I'm in need of some.",
+         name: "Ability to communicate well with others. I am not afraid to ask for help when I'm in need of some.",
       },
       {
          id: '2',
@@ -106,10 +105,19 @@ export const data = {
    positions: [
       {
          id: '1',
+         title: 'Software Engineer',
+         company: 'Reaktor',
+         startDate: '2021-05-24',
+         endDate: null,
+         location: 'Helsinki / remote, Finland',
+         achievements: [],
+      },
+      {
+         id: '2',
          title: 'Full-stack Developer',
          company: 'Puheet.com',
          startDate: '2020-09-16',
-         endDate: null,
+         endDate: '2021-05-21',
          location: 'Espoo / remote, Finland',
          achievements: [
             'Backend work with mostly NodeJs + some python',
@@ -118,7 +126,7 @@ export const data = {
          ],
       },
       {
-         id: '2',
+         id: '3',
          title: 'Frontend Developer',
          company: 'Jinzio',
          startDate: '2020-06-01',
@@ -131,7 +139,7 @@ export const data = {
          ],
       },
       {
-         id: '3',
+         id: '4',
          title: 'Alpine Skier',
          company: 'Ski Sport Finland',
          startDate: '2015-04-01',
